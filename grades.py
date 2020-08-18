@@ -21,7 +21,7 @@ def describe(grades: pd.DataFrame):
 
 if __name__ == '__main__':
 	ap = ArgumentParser(description="Get the D A T A and the means from inside grades")
-	ap.add_argument('htmlfile', type=str, metavar='FILE', help="Your html file downloaded from"
+	ap.add_argument('htmlfile', type=str, metavar='FILE', help="Your html file downloaded from "
 			"https://cn.inside.dtu.dk/cnnet/Grades/Grades.aspx")
 	ap.add_argument('--outfile', type=str, metavar='FILE', help="Filename to save grades", default='mygrades.csv')
 	args = ap.parse_args()
