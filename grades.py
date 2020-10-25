@@ -19,7 +19,7 @@ def describe(grades: pd.DataFrame):
 	print(f"Stats for simple and weighted means", prettiboiline)
 	print(grades[['gradepoint', 'weightedgrade']].describe())
 
-	print(f"Mean grade is thus {float( grades[['gradepoint']].mean() ):.3f}")
+	print(f"Mean grade is thus {float( grades[['weightedgrade']].mean() ):.3f}")
 
 if __name__ == '__main__':
 	ap = ArgumentParser(description="Get the D A T A and the means from inside grades")
